@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         <div class="text-center space-y-2">
           <div class="font-bold text-3xl">Current Weather for ${currentLocation.name}, ${currentLocation.region}</div>
             <div class="font-bold">
-              <img src= "//cdn.weatherapi.com/weather/64x64/day/176.png" class="inline-block">
+              <img src= "https://cdn.weatherapi.com/weather/64x64/day/176.png" class="inline-block">
               <span class="temperature">${currentWeather.feelslike_f}</span>° 
               and
               <span class="conditions">${currentWeather.condition.text}</span>
