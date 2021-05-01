@@ -70,40 +70,27 @@ window.addEventListener('DOMContentLoaded', async function() {
       forecastList.innerHTML = `
       <div class="text-center space-y-8">
         <div class="font-bold text-3xl">${numDays} Day Forecast</div>
+        
       </div>`
 
-      // //Loop through the forecast array to display weather for those days
-      // for(let i = 0; i < numDays; i++){
-      //   // Create variable to store each daily forecast in memory
-      //   let tempForecast = currentForecast.forecastday[i]
+      //Loop through the forecast array to display weather for those days
+      for(let i = 0; i < numDays; i++){
+        // Create variable to store each daily forecast in memory
+        let tempForecast = currentForecast.forecastday[i]
         
-      //  //Get a reference to the forecast element
+       //Get a reference to the forecast element
 
-      //   forecastList.insertAdjacentHTML(`beforeend`, 
-      //   <div class="text-center space-y-8">
-      //   <div class="font-bold text-3xl">3 Day Forecast</div>
-      //   <div>
-      //     <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="mx-auto">
-      //     <h1 class="text-2xl text-bold text-gray-500">2021-04-27</h1>
-      //     <h2 class="text-xl">High 66° – Low 44°</h2>
-      //     <p class="text-gray-500">Partly Cloudy</h1>
-      //   </div>
-      //   <div>
-      //     <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="mx-auto">
-      //     <h1 class="text-2xl text-bold text-gray-500">2021-04-28</h1>
-      //     <h2 class="text-xl">High 66° – Low 44°</h2>
-      //     <p class="text-gray-500">Partly Cloudy</h1>
-      //   </div>
-
-      //   <div>
-      //     <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="mx-auto">
-      //     <h1 class="text-2xl text-bold text-gray-500">2021-04-29</h1>
-      //     <h2 class="text-xl">High 66° – Low 44°</h2>
-      //     <p class="text-gray-500">Partly Cloudy</h1>
-      //   </div>
-      // </div>
-      //   )
-      // }
+        forecastList.insertAdjacentHTML(`beforeend`, 
+        `<div class="text-center space-y-8">
+          <div>
+            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="mx-auto">
+            <h1 class="text-2xl text-bold text-gray-500">2021-04-27</h1>
+            <h2 class="text-xl">High 66° – Low 44°</h2>
+            <p class="text-gray-500">Partly Cloudy</h1>
+          </div>
+        </div>`
+        )
+      }
 
 
     }
