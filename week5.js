@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', async function() {
               <img src= ${currentWeather.condition.icon} class="inline-block">
               <span class="temperature">${currentWeather.feelslike_f}</span>° 
               and
-              <span class="conditions">Partly Cloudy</span>
+              <span class="conditions">${currentWeather.text}</span>
           </div>
         </div>`
     }
