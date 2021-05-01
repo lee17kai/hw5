@@ -83,10 +83,10 @@ window.addEventListener('DOMContentLoaded', async function() {
         forecastList.insertAdjacentHTML(`beforeend`, 
         `<div class="text-center space-y-8">
           <div>
-            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="mx-auto">
-            <h1 class="text-2xl text-bold text-gray-500">2021-04-27</h1>
-            <h2 class="text-xl">High 66° – Low 44°</h2>
-            <p class="text-gray-500">Partly Cloudy</h1>
+            <img src="https:${tempForecast.day.condition.icon}" class="mx-auto">
+            <h1 class="text-2xl text-bold text-gray-500">${tempForecast.date}</h1>
+            <h2 class="text-xl">High ${tempForecast.day.maxtemp_f}° – Low ${tempForecast.day.mintemp_f}°</h2>
+            <p class="text-gray-500">${tempForecast.day.condition.text}</h1>
           </div>
         </div>`
         )
