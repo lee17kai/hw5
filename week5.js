@@ -49,10 +49,10 @@ window.addEventListener('DOMContentLoaded', async function() {
       // - Continue the recipe yourself!
 
       //Get a reference to the city the user wants to see
-      let cityInput = document.querySelector(`.current`)
+      let locationElement = document.querySelector(`.current`)
 
       //Put 
-      cityInput.innerHTML = `
+      locationElement.innerHTML = `
         <div class="text-center space-y-2">
           <div class="font-bold text-3xl">Current Weather for ${currentLocation.name}, ${currentLocation.region}</div>
             <div class="font-bold">
