@@ -1,1 +1,1 @@
-# hw5
+# hw5 This was the fifth homework for intro to software development. Basically, we made an app that retrieves data from the weather API and makes an app where you enter the city and it gives you the weather for the next few days (input by user)
