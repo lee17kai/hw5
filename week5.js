@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', async function() {
       </div>`
 
       //Loop through the forecast array to display weather for those days
-      for(let i = 0; i < numDays; i++){
+      for(let i = 0; i < numDays.length; i++){
         // Create variable to store each daily forecast in memory
         let tempForecast = currentForecast.forecastday[i]
         
