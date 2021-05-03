@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         // Create variable to store each daily forecast in memory
         let tempForecast = currentForecast.forecastday[i]
         
-        //Now add in the list formatting and plug in values
+        //Now add in the list formatting and plug in values 
         forecastList.insertAdjacentHTML(`beforeend`, 
         `<div class="text-center space-y-8">
           <div>
